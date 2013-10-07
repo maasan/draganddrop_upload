@@ -1,0 +1,41 @@
+#filelist {
+  width: 400px;
+  /*
+  height: 400px;
+  background-color: blue;
+  */
+}
+
+.filelist_notareadetected {
+  border: 5px solid white;
+}
+
+.filelist_areadetected {
+  border: 5px solid green;
+}
+
+.filelist_mouseover {
+  filter: alpha(opacity=25);
+  -moz-opacity:0.25;
+  opacity:0.25;
+}
+
+/*-----------------------------------------------------------------------
+  ファイルをサーバーに送信する
+-----------------------------------------------------------------------*/
+#editDialog {
+  background-color: white;
+}
+
+#editDialog dl dt {
+  width:120px;
+  float:left;
+  clear:both;
+  margin-bottom:5px;
+  font-weight:bold;
+}
+
+#editDialog dl dd {
+  margin-left:120px;
+  vertical-align:top;
+}

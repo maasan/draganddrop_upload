@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+
+  <!-- jQuery-UI -->
+  <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui/ui-lightness/jquery-ui-1.8.23.custom.css">
+
+  <!-- PDF.JS -->
+  <script type="text/javascript" src="js/pdf.js"></script>
+
+  <!-- jQuery Context Menu Plugin -->
+  <script type="text/javascript" src="js/jquery.ui.position.js"></script>
+  <script type="text/javascript" src="js/jquery.contextMenu.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.contextMenu.css"/>
+
+  <!-- jqGrid -->
+  <link rel="stylesheet" type="text/css" href="css/ui.jqgrid.css">
+  <script type="text/javascript" src="js/grid.locale-ja.js"></script>
+  <script type="text/javascript" src="js/jquery.jqGrid.min.js"></script>
+
+  <!-- my js and css -->
+  <script type="text/javascript" src="js/base.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+
+<body>
+  <section id="filelist" class="filelist_notareadetected" contextmenu="mymenu">
+  <!--
+    <div style="width:100px;height:100px;background-color:green; margin:10px;">
+      <p>ここです</p>
+    </div>
+  -->
+    <table id="filelist_table"></table>
+  </section>
+
+  <!-- プレビューダイアログ -->
+  <div id="previewDialog" title="プレビュー" style="display: none;">
+    <p id="previewFileName"></p>
+  </div>
+
+  <!-- 編集ダイアログ -->
+  <div id="editDialog" title="編集" style="display: none;">
+    <dl>
+      <dt>ID</dt><dd><p id="editId"></p></dd>
+      <dt>患者名</dt><dd><input type="text" id="editPatientName"></dd>
+      <dt>検査日</dt><dd><input type="text" id="editExamDate"></dd>
+      <dt>ファイル名</dt><dd><p id="editFileName"></p></dd>
+    </dl>
+  </div>
+
+  <!-- エラーダイアログ -->
+  <div id="errorDialog" title="エラー" style="display: none;">
+    <span id="errorMessage"></span>
+  </div>
+
+  <!-- 削除確認ダイアログ -->
+  <div id="deleteConfirmDialog" title="削除確認" style="display: none;">
+    <span>ファイルを削除します。</span>
+    <span id="fileName"></span>
+  </div>
+</body>
+
+</html>
